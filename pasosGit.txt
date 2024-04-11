@@ -2,15 +2,15 @@ datos para git
 username benjaminmurguia
 correo bengie1999love@gmail.com	
 
+software manejo de contraseñas
+keepassXc
+sudo apt install keepassxc
 
 generar token clasico
-
-
 ingresar a settings --developer settings
 
-
-
-
+instalar git
+sudo apt install git
 
 - inicializacion
  git config --global user.email "bengie1999love@gmail.com"
@@ -30,4 +30,9 @@ git brach -M main
 
 
 
-realizar cambios
+realizar una modificacion al archivo pasosGit.txt y mostrar los cambios en github
+modificar el archivo
+git add pasosGit.txt
+git commit -m "primer achivo en repositorio
+git push -u origin main
+
