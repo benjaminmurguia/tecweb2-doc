@@ -1,0 +1,33 @@
+datos para git
+username benjaminmurguia
+correo bengie1999love@gmail.com	
+
+
+generar token clasico
+
+
+ingresar a settings --developer settings
+
+
+
+
+
+- inicializacion
+ git config --global user.email "bengie1999love@gmail.com"
+ git config --global user.name "benjaminmurguia"
+
+-inicializar la carpeta dentro de tecweb2-doc
+git ini
+-adicionamos el achivo pasosGit.txt
+git add pasosGit.txt
+-realizar un commit de cambio
+git commit -m "primer achivo en repositorio
+ -branch
+git brach -M main
+ -adicionar parametro de origen
+
+ -push de los cambios
+
+
+
+realizar cambios
