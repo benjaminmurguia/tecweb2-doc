@@ -1,38 +1,35 @@
 datos para git
-username benjaminmurguia
-correo bengie1999love@gmail.com	
+Datos para GIT
+UserName docentegit
+Correo docente.git@gmail.com
 
-software manejo de contraseñas
-keepassXc
+Sofware para menejo de contraseñas
+KeepassXc
 sudo apt install keepassxc
 
-generar token clasico
-ingresar a settings --developer settings
+GENERAR UN TOCKEN CLASICO
+- Ingresar a settings -> Developers Settings 
 
-instalar git
+Instalar GIT
 sudo apt install git
 
-- inicializacion
- git config --global user.email "bengie1999love@gmail.com"
- git config --global user.name "benjaminmurguia"
-
--inicializar la carpeta dentro de tecweb2-doc
-git ini
--adicionamos el achivo pasosGit.txt
+- Inicializar la carpeta dentro de "tecweb2-doc"
+git init
+- Adicionamos el archivo pasosGit.txt
 git add pasosGit.txt
--realizar un commit de cambio
-git commit -m "primer achivo en repositorio
- -branch
-git brach -M main
- -adicionar parametro de origen
-
- -push de los cambios
-
-
-
-realizar una modificacion al archivo pasosGit.txt y mostrar los cambios en github
-modificar el archivo
-git add pasosGit.txt
-git commit -m "primer achivo en repositorio
+- Realizar un commit de cambio
+git commit -m "primer archivo en repositorio"
+- Branch
+git branch -M main
+-Adicionar el parametro de origen.
+git remote add origin https://github.com/docentegit/tecweb2-doc.git
+- Push de los cambios
 git push -u origin main
+
+- REALIZAR UNA MODIFICACIÓN AL ARCHIVO pasosGit.txt y mostrar los cambios
+ en gihub.
+1. Modificar el archivo.
+2. git add pasosGit.txt
+3. git commit -m "Modificando el archivo en repositorio"
+4. git push -u origin main
 
