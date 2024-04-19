@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeros Primos</title>
-</head>
-<body>
-    <?php
 
-
+<?php
         function Primo($numero) {
             if ($numero <= 1) {
             return false;
@@ -19,28 +10,45 @@
             }
         }
         return true;
-}
-        if (isset($_POST['numero'])) {
-            $cant=$_POST['numero'];
-            echo "numero recibido es ".$cant."<br>";
+        }
 
-            echo "<h3>NUMEROS PRIMOS:</h3>";
-          
+        function generarPrimos($cant)
+        {
+            $numeros_generados = array();
             for ($i = 1; $i <= $cant; $i++) {
 
-                $numerorand =rand(1,100);
+                do {
+                    $numerorand = rand(1, 100); 
+                } while (in_array($numerorand, $numeros_generados)); 
+                
                 if (Primo($numerorand)) {
                     echo "$numerorand es primo. <br>";
                 } else {
                     echo "$numerorand no es primo. <br>";
                 }
                 
+                
             }
+        }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Primos</title>
+</head>
+<body>
+    <?php
 
+        if (isset($_POST['numero'])) {
+            $cant=$_POST['numero'];
+            echo "numero recibido es ".$cant."<br>";
+            echo "<h3>NUMEROS PRIMOS:</h3>";
+            generarPrimos($cant);
+            
             echo '<a href="numeroprimo.php" class="boton">VOLVER</a>';
-
-
-           
+          
         }
 
         else
