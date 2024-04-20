@@ -14,7 +14,8 @@ function inicializar_array($n_elementos,$min,$max){
         $numeros[]=rand($min,$max);
     }
     //$n_elementos=array_rand();
-    //echo"hola".$n_elementos;
+    //
+    echo"hola".$n_elementos;
 
 }
 /* $n_elementos=5;
