@@ -14,10 +14,10 @@ Mysql
 ENTORNO DE DESARROLLO DOCKER      
 Entorno de desarrollo LAMP con Docker Compose 
 comandos a ejecutar:    
-git clone https://github.com/josejuansanchez/lamp-docker
-cd lamp-docker
-sudo docker compose up -d     
-https://josejuansanchez.org/iaw/practica-php/index.pdf      
+git clone https://github.com/josejuansanchez/lamp-docker    
+cd lamp-docker     
+sudo docker compose up -d         
+https://josejuansanchez.org/iaw/practica-php/index.pdf           
 
 
 # Login
