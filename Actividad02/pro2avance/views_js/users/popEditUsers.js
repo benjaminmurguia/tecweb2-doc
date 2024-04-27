@@ -28,7 +28,7 @@ var openPopEditUsers;
 			loadEditUsers(pItemId);							
 		}
 		else {
-			container.find(".modal-title").html('Adicionar novo item');
+			container.find(".modal-title").html('Agregar Usuario');
 			
 		}
 	}
@@ -51,7 +51,7 @@ var openPopEditUsers;
 			dataType : 'json',				
 			success	 : function(data){
 					
-				container.find(".modal-title").html('Editar informações');
+				container.find(".modal-title").html('Editar Informacion');
 				
 				itemId = data.id;
                 container.find('#name').val(data.name);
@@ -63,7 +63,7 @@ var openPopEditUsers;
 				container.find('.loaderContent').fadeOut();
 			},
 			error : function(){
-				defaultNotify({message: 'Houve um erro de resposta', type: 'error'});
+				defaultNotify({message: 'error de respuesta', type: 'error'});
 				container.find('.loaderContent').fadeOut();
 			}
 		}); 
@@ -93,7 +93,7 @@ var openPopEditUsers;
 				container.find('.loaderContent').fadeOut();
 				if(data.result == true){
 					$(document).trigger('UsersUpdated', [data.item, itemId]);	
-					defaultNotify({message:'As informações foram salvas com sucesso.', type: 'success'});				
+					defaultNotify({message:'guardado exitoso.', type: 'success'});				
 					closePopEditUsers();
 				}
 				else {
@@ -101,7 +101,7 @@ var openPopEditUsers;
 				}				
 			},
 			error : function(){
-				defaultNotify({message:'Houve um erro de resposta.', type: 'error'});
+				defaultNotify({message:'error de respuesta.', type: 'error'});
 				container.find('.loaderContent').fadeOut();
 			}
 		}); 	 

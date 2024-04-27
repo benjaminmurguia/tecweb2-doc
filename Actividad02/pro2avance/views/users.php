@@ -1,7 +1,7 @@
 
 <div id="users" class="container">
 
-	<h3 class="mt-3 mb-3">Crud </h3>
+	<h3 class="mt-3 mb-3">Usuarios </h3>
 	<div id="users-filter" class="card card-default content-header">	
 		<div class="card-header">
 			<div class="row">									
@@ -15,7 +15,7 @@
 		        </div>
 				<div class="d-sm-none d-md-block col-md-3 col-lg-4 col-xl-6"></div>
 				<div class="form-group col-sm-4 col-md-3 col-xl-2">								
-				<button id="newUsersBtn" onclick="openPopEditUsers('')" class="btn btn-primary btn-block">Cadastrar Novo</button>
+				<button id="newUsersBtn" onclick="openPopEditUsers('')" class="btn btn-primary btn-block">Añadir usuario</button>
 				</div>						
 			</div>
 		</div>			
@@ -25,11 +25,11 @@
 		<table id="users-data-table" class="table table-striped table-bordered">
 			<thead>
 				<tr>
-					<th>Nome</th>
+					<th>Nombre</th>
 					<th>Email</th>
 					<th>Login</th>
-					<th>Senha</th>
-					<th>Status</th>
+					<th>Contraseña</th>
+					<th>estado</th>
 					<th>&nbsp;</th>
 				</tr>
 			</thead>
@@ -37,9 +37,8 @@
 				<!-- a lista será carregada aqui via ajax -->
 			</tbody>
 		</table>
-		<div class="data-loader alert alert-info" style="display:none">buscando dados... <img src="images/loader.gif" alt="buscando dados..." /></div>
+		<div class="data-loader alert alert-info" style="display:none">buscando datos... <img src="images/loader.gif" alt="buscando dados..." /></div>
 	</div>
-	
 	<!-- inclui o javascript que controla o view-->
 	<script src="views_js/users.js"></script> 
 	<!-- inclui a janela de edição ou criação de usuário -->

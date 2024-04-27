@@ -1,4 +1,20 @@
-<div class="container">
+   
+   <?php
+// Iniciar la sesión
+session_start();
+
+
+?>
+   <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            margin-top: 100px;
+        }
+    </style>
+
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4 login-container">
                 <div class="card">
@@ -6,7 +22,7 @@
                         <h4 class="text-center">Inicio de sesión</h4>
                     </div>
                     <div class="card-body">
-                        <form action="views/validar.php" method="POST">
+                        <form action="models/procesar_login.php" method="POST">
                             <div class="form-group">
                                 <label for="username">Nombre de usuario:</label>
                                 <input type="text" id="username" name="username" class="form-control" required>
@@ -26,5 +42,4 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../models/Users.class.php');?>
     </div>

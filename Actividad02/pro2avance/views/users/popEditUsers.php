@@ -22,15 +22,15 @@
 						    <input id="login" name="login" class="input-field form-control" type="text">
 						</div>
 						<div class="form-group col-sm-6">
-						    <label>Senha</label>
+						    <label>Contraseña</label>
 						    <input id="password" name="password" class="input-field form-control" type="password">
 						</div>
 					</form>						
 				</div>				
 			</div>
 			<div class="modal-footer">		
-				<button id="cancelEditUsersBtn" class="btn btn-default cancel-btn">Fechar</button> 
-				<button id="saveEditUsersBtn" class="btn btn-primary save-btn">Salvar</button> 
+				<button id="cancelEditUsersBtn" class="btn btn-default cancel-btn">Cancelar</button> 
+				<button id="saveEditUsersBtn" class="btn btn-primary save-btn">Guardar</button> 
 			</div>
 		</div>
 		<div class="loaderContent" style="display:none"></div>

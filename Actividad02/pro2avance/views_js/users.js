@@ -80,7 +80,7 @@
         item +=     '<td>'+data.email+'</td>';
         item +=     '<td>'+data.login+'</td>';
         item +=     '<td>'+data.password+'</td>';
-        item +=     '<td>'+(data.active?'Ativo':'Inativo')+'</td>';
+        item +=     '<td>'+(data.active?'Activo':'Inactivo')+'</td>';
 		item +=     '<td class="text-right">';
 		item +=         '<a href="javascript:;" onclick="openPopEditUsers('+data.id+')" class="item-edit" title="Editar"><img src="images/edit.png"></a> &nbsp;';
 		item +=         '<a href="'+data.id+'" class="item-delete" title="Excluir"><img src="images/close.png"></a>';
